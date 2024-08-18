@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +27,58 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+/* Estilo para el botón de WhatsApp */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    z-index: 105; /* Asegúrate de que sea mayor que el botón de scroll */
+}
+
+.float:hover {
+    background-color: #128C7E; /* Color de WhatsApp al pasar el cursor */
+}
+
+.float i {
+    line-height: 60px;
+    margin-top: 3px;
+}
+
+/* Estilo para el botón de scroll to top */
+#scroll-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 90px; /* Ajusta la distancia según sea necesario */
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    z-index: 100; /* Menor que el botón de WhatsApp */
+}
+
+#scroll-top:hover {
+    background-color: #555;
+}
+
+#scroll-top i {
+    line-height: 50px;
+}
+
+  </style>
+  
 </head>
 
 <body class="index-page">
@@ -73,7 +126,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Cotiza!</a>
+      <a class="btn-getstarted" href="https://wa.link/e0jrwa" target="_blank">Cotiza!</a>
 
     </div>
   </header>
@@ -89,7 +142,7 @@
             <h1>Las mejores tiendas en línea... +cerca de vos!</h1>
             <p>Somos tu tienda de confianza para traer lo mejor de SHEIN, AMAZON, EBAY, ALIBABA y más, directamente a Nicaragua con entregas en tiempo récord!</p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Cotiza con nosotros!</a>
+              <a href="https://wa.link/e0jrwa" target="_blank" class="btn-get-started">Cotiza con nosotros!</a>
               <a href="https://www.youtube.com/watch?v=mvT4uEOUxwM" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>¿Cómo funciona?</span></a>
             </div>
           </div>
@@ -315,7 +368,7 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="https://wa.link/e0jrwa" target="_blank">¡Quiero hacer un pedido!</a>
           </div>
         </div>
 
@@ -877,13 +930,13 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <h4>Haz tu pedido con sólo el enlace a tu producto!</h4>
+            <p>Nosotros nos encargaremos de contactarte para enviarte tu cotización y completar tu pedido!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
+              <div class="loading">Cargando...</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="sent-message">Tu orden ha sido recibida, te contactaremos muy pronto! Gracias por elegirnos!</div>
             </form>
           </div>
         </div>
@@ -894,44 +947,21 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Arsha</span>
+            <span class="sitename">UNCLICDETI</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Managua, Nicaragua</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+505 5846 1202</span></p>
+            <p><strong>Email:</strong> <span>info@unclicdeti.com</span></p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div>
-
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
+          <h4>Síguenos!</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -939,7 +969,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">UNCLICDETI</strong> <span>Todos los derechos reservados</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -953,7 +983,10 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.link/e0jrwa" class="float" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
   <!-- Preloader -->
   <div id="preloader"></div>
 
